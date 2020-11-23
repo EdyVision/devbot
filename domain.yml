@@ -1,0 +1,79 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hostname
+  - thankyou
+  - restart
+  - help
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, created by EdyVision and powered by Rasa. I help you perform some dev tasks whether it be on slack while you are away or when you are at your machine."
+
+  utter_hostname_search:
+  - text: "Looking up hostname."
+
+  utter_gratitude_acknowledgement:
+  - text: "You're welcome."
+
+  utter_noworries:
+  - text: You're welcome :)
+
+  utter_ok:
+  - text: 👍
+  
+  utter_ask_continue:
+  - text: Would you like to continue?
+  
+  utter_help:
+    - text: "I can help you perform some dev tasks.
+        \nYou can ask me things like:
+        \n- What is my username for GitHub?
+        \n- Any uncommitted changes on devbot?
+        \n- Am I a reviewer on anything for GitHub?
+        \n- Are there any requested changes on my review for devbot?
+        \n- Run tests on devbot"
+
+
+entities:
+- vcs_system
+- vcs_username
+- repository_name
+- number
+slots:
+  vcs_system:
+    type: any
+  vcs_username:
+    type: any
+  repository_name:
+    type: any
+
+actions:
+- action_restart
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

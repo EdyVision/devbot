@@ -1,0 +1,194 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - good morning
+    - hi
+    - hey there
+    - hey
+    - good evening
+    - hello
+    - Hello?
+    - HEY
+    - hello are you still there
+    - hallo
+    - HI
+    - Hey
+    - Hi
+    - hi!
+    - hello there
+    - hi there
+    - Hello
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - indeed
+    - correct
+    - that sounds good
+    - yes
+    - yess please
+    - of course
+    - yup
+    - yeah
+    - yes please
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - y
+
+- intent: deny
+  examples: |
+    - not really
+    - no
+    - I don't think so
+    - never
+    - no way
+    - nope
+    - no thanks
+    - I dunno
+    - Nothing!
+    - nevermind
+    - n
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thankyou
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+
+- intent: hostname
+  examples: |
+    - what is my hostname?
+    - what is this machine's hostname?
+    - what is the hostname?
+    - get the hostname
+    - hostname
+    - machine hostname
+    - computer hostname
+    - get hostname
+
+- intent: vcs_get_username
+  examples: |
+    - what is my [github](vcs_system) username?
+    - what is the [github](vcs_system) username?
+    - what is my [github enterprise](vcs_system) username?
+    - what is the [github enterprise](vcs_system) username?
+    - get the [github](vcs_system) username
+    - [github](vcs_system) username
+    - current [github](vcs_system) username
+    - retrieve [github](vcs_system) username
+    - get [github](vcs_system) username
+    - what is my [perforce](vcs_system) username?
+    - what is the [perforce](vcs_system) username?
+    - get the [perforce](vcs_system) username
+    - [perforce](vcs_system) username
+    - current [perforce](vcs_system) username
+    - retrieve [perforce](vcs_system) username
+    - get [perforce](vcs_system) username
+    - what is my [gitlab](vcs_system) username?
+    - what is the [gitlab](vcs_system) username?
+    - get the [gitlab](vcs_system) username
+    - [gitlab](vcs_system) username
+    - current [gitlab](vcs_system) username
+    - retrieve [gitlab](vcs_system) username
+    - get [gitlab](vcs_system) username
+
+- intent: vcs_check_uncommitted_changes
+  examples: |
+    - do I have any uncommitted changes on [devbot](repository_name)?
+    - any uncommitted changes on [devbot](repository_name)?
+    - any changes on [devbot](repository_name)?
+    - changes on [devbot](repository_name)?
+    - current changes on [devbot](repository_name)?
+
+- intent: vcs_commit_changes
+  examples: |
+    - what is my [github](vcs_system) username?
+    - what is the [github](vcs_system) username?
+    - get the [github](vcs_system) username
+    - [github](vcs_system) username
+    - current [github](vcs_system) username
+    - retrieve [github](vcs_system) username
+    - get [github](vcs_system) username
+
+- intent: vcs_check_current_branch
+  examples: |
+    - what is the current branch on [devbot](repository_name)?
+    - current branch on [devbot](repository_name)?
+
+- intent: vcs_check_code_review
+  examples: |
+    - what is my [github](vcs_system) username?
+    - what is the [github](vcs_system) username?
+    - get the [github](vcs_system) username
+    - [github](vcs_system) username
+    - current [github](vcs_system) username
+    - retrieve [github](vcs_system) username
+    - get [github](vcs_system) username
